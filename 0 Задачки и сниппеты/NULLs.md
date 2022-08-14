@@ -3,3 +3,6 @@
 */
 SELECT coalesce(density, 0), COUNT(*) as cnt FROM MAT_STRUCTURAL GROUP BY coalesce(density, 0) order by cnt;
 SELECT coalesce(density, 0), COUNT(density) as cnt FROM MAT_STRUCTURAL GROUP BY coalesce(density, 0) order by cnt;
+/
+
+Какова цель функций COALESCE и NVL?
